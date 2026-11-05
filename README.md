@@ -261,7 +261,7 @@ If you use `saccade` in your research, experiments, or applications, please cite
   year         = {2026},
   month        = {November},
   howpublished = {\url{https://github.com/helloitsdaksh/saccade}},
-  note         = {Version 0.1.1}
+  note         = {Version 0.1.2}
 }
 ```
 
@@ -273,7 +273,7 @@ Or using BibLaTeX:
   title     = {saccade: Intrinsic Attention Bottlenecks for Vision Transformers and LLM Prompt Compression},
   year      = {2026},
   month     = {11},
-  version   = {0.1.1},
+  version   = {0.1.2},
   publisher = {GitHub},
   url       = {https://github.com/helloitsdaksh/saccade}
 }

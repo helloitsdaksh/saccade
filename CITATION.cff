@@ -4,7 +4,7 @@ authors:
   - family-names: "Patel"
     given-names: "Daksh"
 title: "saccade: Intrinsic Attention Bottlenecks for Vision Transformers and LLM Prompt Compression"
-version: 0.1.1
+version: 0.1.2
 date-released: 2026-11-04
 url: "https://github.com/helloitsdaksh/saccade"
 repository-code: "https://github.com/helloitsdaksh/saccade"
