@@ -2,6 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/saccade-ai.svg?color=blue)](https://pypi.org/project/saccade-ai/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-helloitsdaksh%2Fsaccade-181717.svg?logo=github)](https://github.com/helloitsdaksh/saccade)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Interactive%20Workbench-6366f1.svg)](https://dakshpatel.dev/demos/saccade-ai.html)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-brightgreen.svg)](https://www.python.org/)
 [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -10,6 +11,10 @@
 > *"Don't explain the black box after the crime was committed. Physically blindfold the model."*
 
 **saccade** is an open-source Python library for **Intrinsically Interpretable Vision Transformers (ViTs)** and **LLM Prompt Token Compression**. Instead of relying on post-hoc saliency heuristics (like Grad-CAM) that generate plausible-looking "interpretability illusions", `saccade` introduces an explicit **hard attention bottleneck** that physically discards uninformative tokens.
+
+- 📖 **Deep Dive Essay:** [I Deleted 94% of an Image and 70% of an LLM Prompt](https://dakshpatel.dev/blog/i-deleted-94-of-an-image-and-70-of-an-llm-prompt.html)
+- 🎮 **Live Interactive Demo:** [Scrub ViT Layers & LLM Tokens in Browser](https://dakshpatel.dev/demos/saccade-ai.html)
+- 📦 **PyPI Package:** [`pip install saccade-ai`](https://pypi.org/project/saccade-ai/)
 
 1. **Vision ViT Saccading**: Discard up to **94% of image patches** while preserving full diagnostic accuracy. Downstream predictions are causally bound only to the preserved $K$ coordinates ($\partial \hat{y} / \partial x_m \equiv 0$).
 2. **LLM Prompt Saccading**: Prune **60% to 75% of input prompt tokens** by discarding syntactic fluff and conversational padding ("breaking grammar"), slashing API costs, prefill latency, and KV-cache footprint while maintaining reasoning fidelity.
@@ -158,6 +163,8 @@ python examples/llm_prompt_saccade.py
 ## 🌐 Standalone Interactive Web Artifacts
 
 `saccade` includes a built-in exporter that compiles interactive scientific visualizers into a **single, zero-dependency, self-contained HTML file** with embedded base64 assets and client-side canvas rendering:
+
+> 🚀 **Live Interactive Demo**: [dakshpatel.dev/demos/saccade-ai.html](https://dakshpatel.dev/demos/saccade-ai.html) — scrub ViT probing layers ($L_0$ to $L_{11}$), adjust token budgets ($K$), and inspect LLM prompt compression live in your browser.
 
 - 🎚️ **Real-Time Sparsity Slider**: Vary $K$ dynamically from $1$ to $N$, observing how confidence shifts as visual context is revealed.
 - 🎯 **Interactive Patch Ablation**: Click individual active patches to manually disable them, instantly viewing the counterfactual logit penalty:
