@@ -151,12 +151,13 @@ python examples/llm_prompt_saccade.py
 
 | Task Category | Original Tokens | Saccaded Tokens | Tokens Saved | Token Reduction | Estimated Prefill Speedup |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Pathology / Medical Report** | 124 | 39 | 85 | **68.5%** | ~3.2× |
+| **Pathology / Medical Report** \* | 124 | 39 | 85 | **68.5%** | ~3.2× |
 | **Financial SEC 10-Q Analysis** | 116 | 34 | 82 | **70.7%** | ~3.4× |
 | **Python Bug Diagnostic** | 91 | 30 | 61 | **67.0%** | ~3.0× |
 | **Average Across Workloads** | **110** | **34** | **76** | **68.9%** | **~3.2×** |
 
-*Estimated API savings: **\$2,280 saved per 1M queries** (at \$10/M tokens).*
+*Estimated API savings: **\$2,280 saved per 1M queries** (at \$10/M tokens).*  
+*\* Note: Clinical pathology benchmark is for research/token-efficiency demonstration only; medical usage is not recommended.*
 
 ---
 
