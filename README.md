@@ -1,5 +1,6 @@
 # saccade 👁️⚡
 
+[![PyPI version](https://img.shields.io/pypi/v/saccade-ai.svg?color=blue)](https://pypi.org/project/saccade-ai/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-helloitsdaksh%2Fsaccade-181717.svg?logo=github)](https://github.com/helloitsdaksh/saccade)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-brightgreen.svg)](https://www.python.org/)
 [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
@@ -17,10 +18,10 @@
 
 ## ⚡ Quickstart
 
-Install directly from GitHub via pip:
+Install via pip:
 
 ```bash
-pip install git+https://github.com/helloitsdaksh/saccade.git
+pip install saccade-ai
 ```
 
 Or clone for local development:
