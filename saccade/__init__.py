@@ -20,7 +20,7 @@ from saccade.visualization import (
 from saccade.exporter import export_interactive_html
 from saccade.text import PromptSaccade, SaccadeTextMetadata
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Daksh Patel"
 
 __all__ = [
